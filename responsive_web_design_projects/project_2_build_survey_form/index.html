@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Grenze|Oswald&display=swap" rel="stylesheet">
+  <title>Survey Form</title>
+</head>
+<body>
+  <header>
+    <h1 id="title">Form Survey</h1>
+    <p id="description">A survey about something</p>
+  </header>
+
+  <div id="container">
+    <form action="" id="survey-form">
+      <div id="user-information">
+        <label for="" id="name-label">Name:</label>
+        <input type="text" id="name" placeholder="Full name" required>
+      </div>
+      
+      <div id="user-information">
+        <label for="" id="email-label">E-mail:</label>
+        <input type="text" id="email" placeholder="user@domain.com" required>
+      </div>
+
+      <div id="user-information">
+        <label id="number-label">Age:</label>
+        <input type="number" id="number" placeholder="Min: 10 - Max: 100" min="10" max="100">
+      </div>
+      
+      <div id="user-opinions">
+        <label for="" id="label-dropdown">How would you describe yours computers skills?</label>
+        <select id="dropdown">
+          <option value="begginer">Begginer</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+        </select>
+      </div>
+
+      <div id="user-opinions">
+        <label for="" id="label-radio" name='user-os'>What's your OS?</label>
+        <input type="radio" name="user-os" id="windows">Windows
+        <input type="radio" name="user-os" id="linux">Linux
+        <input type="radio" name="user-os" id="macos">Mac OS
+      </div>
+
+      <div id="user-opinions">
+        <label id="label-checkbox">What are the reasons that make you use the computer?</label>
+        <input type="checkbox" id="email">Email
+        <input type="checkbox" id="1-2">News
+        <input type="checkbox" id="1-2">Jobs
+        <input type="checkbox" id="1-2">Movies
+        <input type="checkbox" id="1-2">Sports
+      </div>
+
+      <div id="user-textarea">
+        <label id="label-textarea">Please, describe yours experiences with computers so far.</label>
+        <textarea rows="5"></textarea>
+      </div>
+
+      <button type="submit" id="submit">Submit Survey</button>
+    </form>
+
+    <footer id="footer">&copy 2019 - Paulo da Silva - FreeCodeCamp - Responsive Web Design Projects - Project 2: Build a Survey Page</footer>
+  </div>
+</body>
+</html>
